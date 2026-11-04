@@ -17,7 +17,7 @@ Many people find "Microsoft OfficePLUS" (also shown as "微软 PPT 助手 / Offi
 
 1. **It can't be turned off**: you untick it in Word / Excel / PowerPoint options, and after restarting Office it is ticked again.
 2. **It can't be deleted**: File Explorer says the file is in use.
-3. **It comes back**: after deleting some files, the background service downloads or repairs them on the next boot.
+3. **It resurrects (auto-reinstalls)**: even after uninstalling via Windows Control Panel or deleting files, the resident background service or scheduled tasks quietly download and reinstall it again over time.
 
 This tool cleans the whole chain, in this order: processes ➔ services ➔ registry (HKLM / HKCU / 32-bit / Click-to-Run Office) ➔ scheduled tasks ➔ cache folders.
 
@@ -194,6 +194,15 @@ Issues and pull requests are welcome. If cleaning left something behind, please 
 ---
 
 ## FAQ
+
+**Why does it reinstall itself after being uninstalled from the Control Panel?**
+
+The official uninstaller often only removes the front-end add-in while leaving behind the daemon chain that brings it back to life:
+- **Resident system service**: `OfficePLUS Service` runs under `LocalSystem` privileges, continuously checking and re-downloading in the background;
+- **Scheduled tasks**: background tasks periodically trigger silent reinstallation;
+- **Local installer cache**: leftover offline packages in `%ProgramData%` allow it to seamlessly self-repair.
+
+This tool completely registers-out the service, wipes the scheduled tasks, and purges all cache folders, severing the automatic reinstallation chain for good.
 
 **Why doesn't unticking it in Office work?**
 
