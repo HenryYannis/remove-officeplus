@@ -4,8 +4,8 @@
 
 One-click removal of the Microsoft OfficePLUS Office add-in, its background service and leftover files, with an automatic registry backup before anything is deleted.
 
-[![CI](https://github.com/HenryYannis/Remove-OfficePlus/actions/workflows/ci.yml/badge.svg)](https://github.com/HenryYannis/Remove-OfficePlus/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/HenryYannis/remove-officeplus)](https://github.com/HenryYannis/Remove-OfficePlus/releases)
+[![CI](https://github.com/HenryYannis/remove-officeplus/actions/workflows/ci.yml/badge.svg)](https://github.com/HenryYannis/remove-officeplus/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/HenryYannis/remove-officeplus)](https://github.com/HenryYannis/remove-officeplus/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6.svg?logo=windows)
 
@@ -53,7 +53,7 @@ It targets OfficePLUS specifically. If you meet a new variant or a similar add-i
 
 ### Option 1: download the exe (recommended)
 
-1. Download the latest `Remove-OfficePlus-GUI-v<version>.exe` (for example `Remove-OfficePlus-GUI-v1.3.0.exe`) from the [Releases page](https://github.com/HenryYannis/Remove-OfficePlus/releases). If GitHub is unreachable, use the [mirror download page](https://files.xbkjz.cn/apps/officeplus/). The app shows its version in the bottom-right corner; the "下载最新版" (download latest) link opens that mirror page.
+1. Download the latest `Remove-OfficePlus-GUI-v<version>.exe` (for example `Remove-OfficePlus-GUI-v1.3.0.exe`) from the [Releases page](https://github.com/HenryYannis/remove-officeplus/releases). If GitHub is unreachable, use the [mirror download page](https://files.xbkjz.cn/apps/officeplus/). The app shows its version in the bottom-right corner; the "下载最新版" (download latest) link opens that mirror page.
 2. Double-click it and choose "Yes" in the UAC prompt.
 3. Click "一键清理" (one-click clean). It cleans and then re-scans automatically.
 

@@ -9,7 +9,7 @@ from .user_context import get_target_user
 BANNER = """
 ============================================================
          Remove-OfficePlus  |  OfficePLUS 加载项清理工具      
-       https://github.com/HenryYannis/Remove-OfficePlus     
+       https://github.com/HenryYannis/remove-officeplus     
 ============================================================
 """
 

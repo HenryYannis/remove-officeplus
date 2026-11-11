@@ -56,7 +56,7 @@ function Get-ElevationArguments {
         if ($Force) { $argList += " -Force" }
     } else {
         # irm | iex 在线运行时没有本地文件，只能重新拉取同一个地址
-        $onlineCmd = "irm https://raw.githubusercontent.com/HenryYannis/Remove-OfficePlus/main/scripts/Remove-OfficePlus.ps1 | iex"
+        $onlineCmd = "irm https://raw.githubusercontent.com/HenryYannis/remove-officeplus/main/scripts/Remove-OfficePlus.ps1 | iex"
         $argList = "-NoProfile -ExecutionPolicy Bypass -Command `"$onlineCmd`""
     }
     return $argList
@@ -296,7 +296,7 @@ function Show-Banner {
     Clear-Host
     Write-Host "============================================================" -ForegroundColor Cyan
     Write-Host "         Remove-OfficePlus  |  OfficePLUS 加载项清理工具     " -ForegroundColor Yellow
-    Write-Host "       https://github.com/HenryYannis/Remove-OfficePlus     " -ForegroundColor DarkGray
+    Write-Host "       https://github.com/HenryYannis/remove-officeplus     " -ForegroundColor DarkGray
     Write-Host "============================================================" -ForegroundColor Cyan
     Write-Host ""
 }
